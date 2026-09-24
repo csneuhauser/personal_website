@@ -535,6 +535,20 @@ body {
 }
 .entry-body a:hover { color: var(--oxblood); border-color: var(--oxblood); }
 
+.cv-link {
+  margin-top: 0.6rem;
+}
+#experience .cv-link {
+  margin-top: 2rem;
+}
+.cv-link a {
+  color: var(--oak);
+  text-decoration: none;
+  border-bottom: 1px solid var(--underline);
+  transition: color 0.2s, border-color 0.2s;
+}
+.cv-link a:hover { color: var(--oxblood); border-color: var(--oxblood); }
+
 .proj-list { list-style: none; }
 .proj-list li { position: relative; padding-left: 1.35rem; margin-bottom: 0.9rem; }
 .proj-list li:last-child { margin-bottom: 0; }
