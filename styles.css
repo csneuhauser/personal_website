@@ -564,6 +564,7 @@ body {
   background: var(--paper-deep);
   border: 1px solid var(--rule);
 }
+.proj-logo a { display: block; border-bottom: 0; }
 .proj-logo img {
   width: 100%;
   height: auto;
@@ -843,4 +844,5 @@ a:focus-visible {
   /* print the destination of every outbound link */
   .entry-body a[href^="http"]::after,
   .info-value a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+  .proj-logo a[href^="http"]::after { content: none; }
 }
