@@ -553,6 +553,24 @@ body {
 .proj-list li { position: relative; padding-left: 1.35rem; margin-bottom: 0.9rem; }
 .proj-list li:last-child { margin-bottom: 0; }
 
+/* Logo floats left so the entry text wraps around it; styled like .intro-photo */
+.proj-has-logo { display: flow-root; }
+.proj-logo {
+  float: left;
+  width: 180px;
+  margin: 0.25rem 1.25rem 0.5rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+}
+.proj-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(0.40);
+}
+
 /* A square tick suits grotesque type better than a letterpress fleuron */
 .proj-list li::before,
 .tl-notes li::before {
@@ -766,6 +784,7 @@ a:focus-visible {
       "links";
     gap: 1.2rem;
   }
+  .proj-logo { float: none; width: 100%; max-width: 240px; margin: 0.2rem 0 0.7rem; }
   .layout { padding-top: 2rem; }
   .page-body { padding-top: 2rem; }
   .entry-head { grid-template-columns: 2rem 1fr; gap: 0 0.9rem; }
